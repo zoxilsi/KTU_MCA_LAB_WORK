@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Change Background Color</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #colorButton {
+            padding: 15px 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button id="colorButton">Change Background Color</button>
+
+    <script>
+        function changeToRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+
+        function changeToGreen() {
+            document.body.style.backgroundColor = 'green';
+        }
+
+
+        var button = document.getElementById('colorButton');
+
+        button.addEventListener('click', changeToRed);
+        button.addEventListener('dblclick', changeToGreen);
+    </script>
+</body>
+</html>

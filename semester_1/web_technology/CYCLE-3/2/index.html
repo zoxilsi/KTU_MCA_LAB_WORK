@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Light Bulb On/Off</title>
+</head>
+<body>
+    <h1>Light Bulb Control</h1>
+    <img id="bulb" src="/bulboff.gif" alt="Light Bulb">
+    
+    <button onclick="turnOn()">Turn On</button>
+    <button onclick="turnOff()">Turn Off</button>
+
+    <script>
+        function turnOn() {
+            document.getElementById('bulb').src = '/bulbon.gif';
+        }
+
+        function turnOff() {
+            document.getElementById('bulb').src = '/bulboff.gif';
+        }
+    </script>
+</body>
+</html>
